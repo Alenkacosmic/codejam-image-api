@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/assets/css/normalize.css">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <title>PISKEL-clone</title>
+</head>
+<body class="full_wrapper">
+    <header class="header">
+            <div class="header--navbar">
+                <div class="header--navbar--item"><a href="#"></a></div>
+                <div class="header--navbar--item"><a href="#"></a></div>
+                <div class="header--navbar--item"><a href="#"></a></div>
+            </div>
+            <div class="header--logo"><h1>CodeJam - Pallete</h1></div>
+            <div class="header--menu">
+                <ul class="header--menu--closed">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="header--menu--opened">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+    </header>
+    <main class="main_content">
+            <div class="instrument_type">
+                <ul id="instruments">
+                    <li class="type bucket" id="bucket">Fill bucket</li>
+                    <li class="type choose" id="choose">Choose color</li>
+                    <li class="type pencil" id="pencil">Pencil</li>
+                    <li class="type transform inactive">Transform</li>
+                </ul>
+            </div>
+            <div class="instrument_color">
+                <ul id="colours">
+                    <li class="color current"><div class="input_color"><input class="input_color--container" id="currentColor" type="color"></div>Current color</li>
+                    <li class="color prev"><div class="input_color" id="prevColor"></div>Prev color</li>
+                    <li class="color red"><div class="input_color" id="redColor"></div>Red</li>
+                    <li class="color blue"><div class="input_color" id="blueColor"></div>Blue</li>
+                </ul>
+            </div>
+            <div class="canvas">
+                <div class="canvas--paneel">
+                    <input class="canvas--paneel-button" id="canvasSearch" type="button" value="Search">
+                    <input class="canvas--paneel-texting" id="canvasText" type="text">
+                    <input class="canvas--paneel-button" id="grayScaleMe" type="button" value="GrayScale">
+                </div>                
+                <canvas id="switcher">Your browser doesn't support canvas</canvas>
+            </div>
+    </main>
+    <script src="dist/main.js"></script>
+</body>
+</html>
