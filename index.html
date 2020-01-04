@@ -47,10 +47,13 @@
                 </ul>
             </div>
             <div class="canvas">
-                <div class="canvas--paneel">
+                <div id="buttonsToClick" class="canvas--paneel">
                     <input class="canvas--paneel-button" id="canvasSearch" type="button" value="Search">
                     <input class="canvas--paneel-texting" id="canvasText" type="text">
                     <input class="canvas--paneel-button" id="grayScaleMe" type="button" value="GrayScale">
+                    <input type="button" class="canvasSize draw128x128" id="sizeButton" value="128">
+                    <input type="button" class="canvasSize draw256x256" id="sizeButton" value="256">
+                    <input type="button" class="canvasSize draw512x512" id="sizeButton" value="512">
                 </div>                
                 <canvas id="switcher">Your browser doesn't support canvas</canvas>
             </div>
